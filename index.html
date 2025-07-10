@@ -2,12 +2,26 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Transat - Bar Resto au Havre</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+  @keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .animate-gradient {
+    background: linear-gradient(135deg, #cce5ff, #ffffff, #e6f7ff);
+    background-size: 400% 400%;
+    animation: gradientFlow 15s ease infinite;
+  }
+</style>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-gradient-to-b from-blue-100 via-white to-white animate-gradient">
 
     <header class="bg-blue-900 text-white p-6 text-center shadow-md">
         <h1 class="text-4xl font-bold">La Transat</h1>
