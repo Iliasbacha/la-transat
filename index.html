@@ -1,67 +1,94 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Transat - Bar Resto au Havre</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-  @keyframes gradientFlow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
-  .animate-gradient {
-    background: linear-gradient(135deg, #cce5ff, #ffffff, #e6f7ff);
-    background-size: 400% 400%;
-    animation: gradientFlow 15s ease infinite;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Transat - Bar Resto au Havre</title>
+  <link rel="icon" href="le_transat_logo.webp" type="image/webp" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .animate-gradient {
+      background: linear-gradient(135deg, #e0f7fa, #ffffff, #e3f2fd);
+      background-size: 400% 400%;
+      animation: gradientFlow 20s ease infinite;
+    }
+    .goog-te-banner-frame.skiptranslate { display: none !important; }
+    body { top: 0 !important; }
+  </style>
 </head>
-<body class="bg-gradient-to-b from-blue-100 via-white to-white animate-gradient">
 
-    <header class="bg-blue-900 text-white p-6 text-center shadow-md">
-        <h1 class="text-4xl font-bold">La Transat</h1>
-        <p class="mt-2">Bar - Restaurant face au port du Havre</p>
-        <a href="reservation.html" class="mt-4 inline-block bg-white text-blue-900 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition">Réserver une table</a>
-    </header>
+<body class="animate-gradient text-gray-800">
 
-    <main class="p-6 space-y-12">
-        <section>
-            <h2 class="text-2xl font-semibold mb-4 text-center">Nos Boissons</h2>
-            <div class="flex justify-center">
-                <img src="boisson.webp" alt="Boisson" class="rounded-xl shadow-md w-full max-w-md">
-            </div>
-            <p class="text-center mt-2">Aperol Spritz rafraîchissant en terrasse, accompagné d’un café Dammann.</p>
-        </section>
+  <!-- Google Translate Widget -->
+  <div id="google_translate_element" class="absolute top-2 right-2 z-50"></div>
 
-        <section>
-            <h2 class="text-2xl font-semibold mb-4 text-center">Desserts Maison</h2>
-            <div class="flex justify-center">
-                <img src="dessert.webp" alt="Desserts" class="rounded-xl shadow-md w-full max-w-md">
-            </div>
-            <p class="text-center mt-2">Assiette gourmande : mousse, brownie, tiramisu, crème, café.</p>
-        </section>
+  <!-- Sticky Header -->
+  <header class="sticky top-0 bg-white/80 backdrop-blur shadow z-40">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center space-x-2">
+        <img src="le_transat_logo.webp" alt="Logo La Transat" class="w-10 h-10 rounded-full" />
+        <span class="text-xl font-bold text-blue-900">La Transat</span>
+      </div>
+      <nav class="space-x-4 text-blue-800 font-medium">
+        <a href="#hero" class="hover:underline">Accueil</a>
+        <a href="reservation.html" class="hover:underline">Réservation</a>
+      </nav>
+    </div>
+  </header>
 
-        <section>
-            <h2 class="text-2xl font-semibold mb-4 text-center">Planche Apéro</h2>
-            <div class="flex justify-center">
-                <img src="plat.webp" alt="Plat" class="rounded-xl shadow-md w-full max-w-md">
-            </div>
-            <p class="text-center mt-2">Tapas de la mer : crevettes, bulots, accras, sauce citronnée.</p>
-        </section>
-    </main>
+  <!-- Hero Section -->
+  <section id="hero" class="h-[70vh] bg-cover bg-center flex items-center justify-center text-white text-center" style="background-image: url('hero.jpg');">
+    <div class="bg-black/50 p-8 rounded-xl">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Bienvenue à La Transat</h1>
+      <p class="text-lg md:text-xl">Terrasse face au port du Havre, cuisine fraîche & ambiance conviviale.</p>
+    </div>
+  </section>
 
-    <footer class="bg-blue-900 text-white text-center p-6 mt-12">
-        <p>📍 Le Havre - Quai de la Réunion | ☎ Réservations au 01 23 45 67 89</p>
-        <iframe class="mt-4 w-full max-w-3xl mx-auto rounded-xl"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2650.104657101262!2d0.103558!3d49.492387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02f1c97a7870b%3A0x77e144f5b6f7f6a0!2sLa%20Transat%20-%20Bar%20Resto%20du%20Port!5e0!3m2!1sfr!2sfr!4v1710099999999"
-            height="300" allowfullscreen="" loading="lazy">
-        </iframe>
-    </footer>
+  <!-- Menu Sections -->
+  <main class="max-w-4xl mx-auto py-12 px-4 space-y-12">
+    <section>
+      <h2 class="text-3xl font-semibold text-blue-900 mb-6">Nos Boissons</h2>
+      <img src="boisson.webp" class="rounded-lg shadow w-full mb-4" alt="Boissons La Transat" />
+      <p>Aperol Spritz, cafés, thés, cocktails, softs et vins soigneusement sélectionnés.</p>
+    </section>
 
+    <section>
+      <h2 class="text-3xl font-semibold text-blue-900 mb-6">Nos Desserts</h2>
+      <img src="dessert.webp" class="rounded-lg shadow w-full mb-4" alt="Desserts" />
+      <p>Tiramisu maison, moelleux chocolat, panna cotta et douceurs de saison.</p>
+    </section>
+
+    <section>
+      <h2 class="text-3xl font-semibold text-blue-900 mb-6">Planche Apéro</h2>
+      <img src="plat.webp" class="rounded-lg shadow w-full mb-4" alt="Planches apéritives" />
+      <p>À partager : fromages affinés, charcuterie locale et petits plaisirs salés.</p>
+    </section>
+  </main>
+
+  <!-- Footer / Map -->
+  <footer class="bg-blue-900 text-white p-8 text-center">
+    <h3 class="text-xl font-semibold mb-4">Nous trouver</h3>
+    <div class="w-full max-w-3xl mx-auto mb-6">
+      <iframe class="w-full h-64 rounded-lg" src="https://www.google.com/maps?q=la+transat+le+havre&output=embed" loading="lazy"></iframe>
+    </div>
+    <p>&copy; 2025 La Transat – Tous droits réservés</p>
+  </footer>
+
+  <!-- Google Translate Script -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'fr',
+        includedLanguages: 'fr,en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
