@@ -5,47 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Transat - Bar Resto au Havre</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #1e3c72; color: white; text-align: center; padding: 2rem; }
-        section { padding: 2rem; text-align: center; }
-        img { width: 100%; max-width: 600px; border-radius: 8px; margin-bottom: 1rem; }
-        .menu-item { margin: 2rem 0; }
-        footer { background: #1e3c72; color: white; text-align: center; padding: 1rem; }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <h1>La Transat</h1>
-        <p>Bar - Restaurant face au port du Havre</p>
+<body class="bg-white text-gray-800">
+
+    <header class="bg-blue-900 text-white p-6 text-center shadow-md">
+        <h1 class="text-4xl font-bold">La Transat</h1>
+        <p class="mt-2">Bar - Restaurant face au port du Havre</p>
+        <a href="reservation.html" class="mt-4 inline-block bg-white text-blue-900 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition">Réserver une table</a>
     </header>
 
-    <section>
-        <h2>Nos Boissons</h2>
-        <div class="menu-item">
-            <img src="boisson.webp" alt="Aperol Spritz et Café">
-            <p>Aperol Spritz rafraîchissant en terrasse, accompagné d’un café Dammann.</p>
-        </div>
-    </section>
+    <main class="p-6 space-y-12">
+        <section>
+            <h2 class="text-2xl font-semibold mb-4 text-center">Nos Boissons</h2>
+            <div class="flex justify-center">
+                <img src="boisson.webp" alt="Boisson" class="rounded-xl shadow-md w-full max-w-md">
+            </div>
+            <p class="text-center mt-2">Aperol Spritz rafraîchissant en terrasse, accompagné d’un café Dammann.</p>
+        </section>
 
-    <section>
-        <h2>Desserts Maison</h2>
-        <div class="menu-item">
-            <img src="dessert.webp" alt="Assiette de desserts maison">
-            <p>Assiette gourmande : mousse, brownie, tiramisu, crème, café.</p>
-        </div>
-    </section>
+        <section>
+            <h2 class="text-2xl font-semibold mb-4 text-center">Desserts Maison</h2>
+            <div class="flex justify-center">
+                <img src="dessert.webp" alt="Desserts" class="rounded-xl shadow-md w-full max-w-md">
+            </div>
+            <p class="text-center mt-2">Assiette gourmande : mousse, brownie, tiramisu, crème, café.</p>
+        </section>
 
-    <section>
-        <h2>Planche Apéro</h2>
-        <div class="menu-item">
-            <img src="plat.webp" alt="Planche apéritive de la mer">
-            <p>Tapas de la mer : crevettes, bulots, accras, sauce citronnée.</p>
-        </div>
-    </section>
+        <section>
+            <h2 class="text-2xl font-semibold mb-4 text-center">Planche Apéro</h2>
+            <div class="flex justify-center">
+                <img src="plat.webp" alt="Plat" class="rounded-xl shadow-md w-full max-w-md">
+            </div>
+            <p class="text-center mt-2">Tapas de la mer : crevettes, bulots, accras, sauce citronnée.</p>
+        </section>
+    </main>
 
-    <footer>
+    <footer class="bg-blue-900 text-white text-center p-6 mt-12">
         <p>📍 Le Havre - Quai de la Réunion | ☎ Réservations au 01 23 45 67 89</p>
+        <iframe class="mt-4 w-full max-w-3xl mx-auto rounded-xl"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2650.104657101262!2d0.103558!3d49.492387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02f1c97a7870b%3A0x77e144f5b6f7f6a0!2sLa%20Transat%20-%20Bar%20Resto%20du%20Port!5e0!3m2!1sfr!2sfr!4v1710099999999"
+            height="300" allowfullscreen="" loading="lazy">
+        </iframe>
     </footer>
+
 </body>
 </html>

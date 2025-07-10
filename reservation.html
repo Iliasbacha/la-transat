@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - La Transat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <main class="min-h-screen flex flex-col items-center justify-center p-6">
+        <h1 class="text-3xl font-bold mb-6 text-blue-900">Réservez votre table</h1>
+        <form action="https://formsubmit.co/elbachailias5@gmail.com" method="POST" class="bg-white shadow-lg rounded-xl p-8 w-full max-w-lg">
+            <input type="hidden" name="_captcha" value="false">
+            <label class="block mb-4">
+                <span class="text-gray-700">Nom :</span>
+                <input name="Nom" type="text" required class="mt-1 block w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500">
+            </label>
+            <label class="block mb-4">
+                <span class="text-gray-700">Email :</span>
+                <input name="Email" type="email" required class="mt-1 block w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500">
+            </label>
+            <label class="block mb-4">
+                <span class="text-gray-700">Date :</span>
+                <input name="Date" type="date" required class="mt-1 block w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500">
+            </label>
+            <label class="block mb-4">
+                <span class="text-gray-700">Heure :</span>
+                <input name="Heure" type="time" required class="mt-1 block w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500">
+            </label>
+            <label class="block mb-4">
+                <span class="text-gray-700">Nombre de personnes :</span>
+                <input name="Nombre de personnes" type="number" min="1" max="20" required class="mt-1 block w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500">
+            </label>
+            <label class="block mb-4">
+                <span class="text-gray-700">Message :</span>
+                <textarea name="Message" rows="4" class="mt-1 block w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500"></textarea>
+            </label>
+            <button type="submit" class="w-full bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800 transition font-semibold">Envoyer</button>
+        </form>
+        <a href="index.html" class="mt-6 text-blue-700 hover:underline">← Retour à l'accueil</a>
+    </main>
+
+</body>
+</html>
